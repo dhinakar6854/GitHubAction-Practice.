@@ -1,0 +1,9 @@
+
+{
+  "name": "sample-app",
+  "version": "1.0.0",
+  "description": "GitHub Actions Node.js setup demo",
+  "scripts": {
+    "start": "node index.js"
+  }
+}
