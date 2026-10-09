@@ -21,3 +21,14 @@ jobs:
       - name: Uses workflow + job env
         run: |
           echo "my name is = $NAME"
+
+  job3:
+    runs-on: ubuntu-latest
+    env:
+      NAME: Munna
+    steps:
+      - name: Uses workflow + job env
+        env:
+          NAME: Cloud Teacher
+        run: |
+          echo "my name is = $NAME"   
