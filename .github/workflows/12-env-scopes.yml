@@ -8,7 +8,16 @@ env:
 jobs:
   job1:
     runs-on: ubuntu-latest
+    env:
+      NAME: Munna
     steps:
       - name: Uses workflow + job env
         run: |
-          echo "my name is $NAME"
+          echo "my name is = $NAME"
+
+  job2:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Uses workflow + job env
+        run: |
+          echo "my name is = $NAME"
